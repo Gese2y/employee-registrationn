@@ -29,9 +29,13 @@ import { FilterService, SortService, IFilter, VirtualScrollService,EditService  
 @NgModule({
   declarations: [
     AppComponent,
-    RegistrationComponent,
     HomeComponent,
-    // RegistrationDialogComponent,
+    TestComponent,
+    RegistrationComponent,
+    DepartementRegistrationComponent,
+    RoleRegistrationComponent,
+    TasksRegistrationComponent,
+    PerformanceRegistrationComponent,
   ],
   imports: [
     BrowserModule,
