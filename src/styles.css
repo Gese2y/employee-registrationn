@@ -1,1 +1,20 @@
 /* You can add global styles to this file, and also import other style files */
+/* You can add global styles to this file, and also import other style files */
+/* styles.scss */
+@import "~@syncfusion/ej2-base/styles/material.css";
+@import "~@syncfusion/ej2-buttons/styles/material.css";
+@import "~@syncfusion/ej2-grids/styles/material.css";
+@import "~@syncfusion/ej2-layouts/styles/material.css";
+@import "~@syncfusion/ej2-dropdowns/styles/material.css";
+@import "~@syncfusion/ej2-navigations/styles/material.css";
+@import "~@syncfusion/ej2-inputs/styles/material.css";
+@import "~@syncfusion/ej2-popups/styles/material.css";
+@import '~@syncfusion/ej2-angular-navigations/styles/material.css';
+@import '~@syncfusion/ej2-angular-lists/styles/material.css';
+
+.panel-content {
+  padding: 10px;
+  background: #f5f5f5;
+  border: 1px solid #ddd;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+}
