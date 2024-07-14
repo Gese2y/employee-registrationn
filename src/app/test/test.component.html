@@ -82,7 +82,7 @@
         <e-column field='department' headerText='Department' width=100></e-column>
         <e-column headerText='Action' width=100>
           <ng-template #template let-data>
-            <button ejs-button cssClass="e-primary" (click)="openDialog(data, true)">
+            <button ejs-button cssClass="e-primary" (click)="openDialogs(data, true)">
               <span class="e-icons e-edit"></span> Update
             </button>
           </ng-template>
@@ -102,7 +102,7 @@
 <ejs-dialog #dialogObj [visible]="false" isModal='true' [width]="'600px'" [height]="'500px'" [header]="'Employee Form'">
 
   <div>
-     <app-registration [isEdit]="isEdit" (completedupdate)="updateEmployee($event)" (completed)="register($event)"></app-registration>
+     <app-registration  (completedupdate)="updateEmployee($event)" (completed)="register($event)"></app-registration>
       <button ejs-button cssClass="e-primary" (click)="dialogButtonClick()">Close</button>
   </div>
 

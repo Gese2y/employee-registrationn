@@ -47,6 +47,13 @@ openDialog(data: any,isEdit:boolean): void {
   this.dialogContent = `Order ID: ${data.OrderID}`;
   this.dialogObj.show();
 }
+openDialogs(data: any,isEdit:boolean): void {
+  // Customize dialog content if needed
+  this.datas=data
+  this.isEdit=isEdit
+  this.dialogContent = `Order ID: ${data.OrderID}`;
+  this.dialogObj.show();
+}
 openClick(): void {
   console.log('test',this.sidebar);
   
