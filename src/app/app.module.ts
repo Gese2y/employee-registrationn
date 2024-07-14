@@ -8,7 +8,7 @@ import { DropDownListModule } from '@syncfusion/ej2-angular-dropdowns';
 import { TextBoxModule } from '@syncfusion/ej2-angular-inputs';
 import { ButtonModule } from '@syncfusion/ej2-angular-buttons';
 import { DatePickerModule } from '@syncfusion/ej2-angular-calendars';
-import { RegistrationDialogComponent } from './registration-dialog/registration-dialog.component';
+// import { RegistrationDialogComponent } from './registration-dialog/registration-dialog.component';
 import { HttpClientModule } from '@angular/common/http';
 import { SidebarModule, TreeViewModule } from '@syncfusion/ej2-angular-navigations';
 import { DashboardLayoutAllModule } from '@syncfusion/ej2-angular-layouts';
@@ -31,7 +31,7 @@ import { FilterService, SortService, IFilter, VirtualScrollService,EditService  
     AppComponent,
     RegistrationComponent,
     HomeComponent,
-    RegistrationDialogComponent,
+    // RegistrationDialogComponent,
   ],
   imports: [
     BrowserModule,
