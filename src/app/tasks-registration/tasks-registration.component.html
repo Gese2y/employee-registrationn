@@ -1,0 +1,28 @@
+<div class="main-content" id="main-text">
+    <div class="sidebar-content">
+      <h2>Tasks</h2>
+      <div class="e-control e-listview e-list-template e-touch">
+        <ejs-grid [dataSource]="data" allowPaging="true" [pageSettings]="pageSettings" [allowFiltering]="true" height="273px" [filterSettings]="filterSettings" width="100%" allowScrolling="true">
+          <e-columns>
+            <e-column field="name" headerText="Task Name" width=150></e-column>
+            <e-column field="assignedTo" headerText="Assigned To" width=150></e-column>
+            <e-column field="deadline" headerText="Deadline" width=150></e-column>
+            <e-column headerText="Action" width=100>
+              <ng-template #template let-data>
+                <button ejs-button cssClass="e-primary" (click)="openDialog(data, true)">
+                  <span class="e-icons e-edit"></span> Update
+                </button>
+              </ng-template>
+            </e-column>
+            <e-column headerText="" width=100>
+              <ng-template #template let-data>
+                <button ejs-button cssClass="e-danger" (click)="deleteTask(data)">
+                  <span class="e-icons e-delete"></span> Delete
+                </button>
+              </ng-template>
+            </e-column>
+          </e-columns>
+        </ejs-grid>
+      </div>
+    </div>
+  </div>

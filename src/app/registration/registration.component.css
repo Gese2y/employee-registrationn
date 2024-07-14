@@ -1,0 +1,60 @@
+
+.registration-form {
+  max-width: 600px;
+  margin: 0 auto;
+  margin-top: 10%;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background: #f9f9f9;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.submit-group {
+  text-align: center;
+}
+
+ejs-textbox,
+ejs-datepicker,
+ejs-dropdownlist {
+  display: block;
+  width: 100%;
+}
+
+ejs-button {
+  display: inline-block;
+}
+.employee-registration-form {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.form-row {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.form-column {
+  flex: 1;
+  margin-right: 10px; /* Adjust spacing between columns */
+}
+
+.form-group {
+  margin-bottom: 10px; /* Adjust vertical spacing between form groups */
+}
+
+.submit-group {
+  width: 100%;
+  text-align: right;
+}
+

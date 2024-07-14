@@ -1,0 +1,32 @@
+<div class="e-control e-listview e-list-template e-touch">
+    <div class='input-container'>
+        <label for='fields' class='label'>Select Filter Mode</label>
+        <ejs-dropdownlist #field id='fields' [dataSource]='filterModesData' (change)='onModeChange($event)'></ejs-dropdownlist>
+    </div>
+    <div class="button-container">
+      <button ejs-button cssClass="e-danger" (click)="openDialog('data',false)">Add New</button>
+  </div>
+  
+    <ejs-grid [dataSource]='data' allowPaging='true' [pageSettings]="pageSettings" [allowFiltering]='true' height='273px' [filterSettings]='filterSettings' width='100%' allowScrolling='true'>
+        <e-columns>
+            <e-column field='name' headerText='Department Name' width=150></e-column>
+            <e-column field='head' headerText='Department Head' width=150></e-column>
+            <e-column field='location' headerText='Location' width=150></e-column>
+            <e-column headerText='Action' width=100>
+                <ng-template #template let-data>
+                    <button ejs-button cssClass="e-primary" (click)="openDialog(data, true)">
+                        <span class="e-icons e-edit"></span> Update
+                    </button>
+                </ng-template>
+            </e-column>
+            <e-column headerText='' width=100>
+                <ng-template #template let-data>
+                    <button ejs-button cssClass="e-danger" (click)="deleteEmployee(data)">
+                        <span class="e-icons e-delete"></span> Delete
+                    </button>
+                </ng-template>
+            </e-column>
+            
+        </e-columns>
+    </ejs-grid>
+</div>
