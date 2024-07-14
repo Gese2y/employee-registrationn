@@ -24,6 +24,11 @@ import { DialogAllModule } from '@syncfusion/ej2-angular-popups'
 import { RatingModule } from '@syncfusion/ej2-angular-inputs';
 import { NgIf } from '@angular/common';
 import { FilterService, SortService, IFilter, VirtualScrollService,EditService  } from '@syncfusion/ej2-angular-grids';
+import { TestComponent } from './test/test.component';
+import { DepartementRegistrationComponent } from './departement-registration/departement-registration.component';
+import { RoleRegistrationComponent } from './role-registration/role-registration.component';
+import { TasksRegistrationComponent } from './tasks-registration/tasks-registration.component';
+import { PerformanceRegistrationComponent } from './performance-registration/performance-registration.component';
 
 
 @NgModule({
