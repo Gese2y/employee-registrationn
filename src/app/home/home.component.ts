@@ -26,17 +26,17 @@ export class HomeComponent implements OnInit {
       {
           nodeId: '02', nodeText: 'Departements', iconCss: 'icon-thumbs-up-alt icon',
       },
-      {
-          nodeId: '03', nodeText: 'Roles', iconCss: 'icon-docs icon',
-      },
+      // {
+      //     nodeId: '03', nodeText: 'Roles', iconCss: 'icon-docs icon',
+      // },
       
       {
           nodeId: '04', nodeText: 'Tasks', iconCss: 'icon-docs icon',
       },
       
-      {
-          nodeId: '05', nodeText: 'Persformance', iconCss: 'icon-docs icon',
-      },
+      // {
+      //     nodeId: '05', nodeText: 'Persformance', iconCss: 'icon-docs icon',
+      // },
  
   ];
   
