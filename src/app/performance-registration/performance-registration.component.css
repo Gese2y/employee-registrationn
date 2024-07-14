@@ -1,0 +1,16 @@
+.chart-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  .chart {
+    flex: 1;
+    margin: 10px;
+    text-align: center;
+  }
+  
+  .chart h3 {
+    margin-bottom: 10px;
+  }
+  

@@ -5,7 +5,7 @@ export let data: Object[] = [
     },
     {
         id:'2fa40f17-5bec-4c94-892e-58fc936e93a2',firstName: 'Jane', lastName: 'Smith', address: '456 Elm St, Los Angeles, CA 90001', phone: '987-654-3210',
-        role: 'Developer', dob: new Date('1990-02-15'), email: 'jane.smith@example.com', gender: 'Female', department: 'Finance'
+        role: 'Developer', dob: new Date('1990-02-15'), email: 'jane.smith@example.com', gender: 'Male', department: 'Finance'
     },
     {
         id:'2fa40f17-5bec-4c94-892e-58fc936e93a3',firstName: 'Alice', lastName: 'Johnson', address: '789 Oak St, Chicago, IL 60601', phone: '555-555-5555',
@@ -48,7 +48,10 @@ export let Depdata: Object[] = [
   ];
   export let Tasksdata: Object[]  = [
     { id: 1, name: 'Task 1', assignedTo: 'John Doe', deadline: '2024-08-01' },
-    { id: 2, name: 'Task 2', assignedTo: 'Jane Smith', deadline: '2024-08-05' },
-    { id: 3, name: 'Task 3', assignedTo: 'Alice Johnson', deadline: '2024-08-10' },
+    { id: 2, name: 'Task 2', assignedTo: 'John Doe', deadline: '2024-08-01' },
+    { id: 3, name: 'Task 3', assignedTo: 'John Doe', deadline: '2024-08-01' },
+    { id: 4, name: 'Task 4', assignedTo: 'Jane Smith', deadline: '2024-08-05' },
+    { id: 5, name: 'Task 5', assignedTo: 'Alice Johnson', deadline: '2024-08-10' },
+    { id: 6, name: 'Task 6', assignedTo: 'Alice Johnson', deadline: '2024-08-10' },
     // Add more tasks as needed
   ];

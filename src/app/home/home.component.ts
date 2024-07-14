@@ -34,9 +34,9 @@ export class HomeComponent implements OnInit {
           nodeId: '04', nodeText: 'Tasks', iconCss: 'icon-docs icon',
       },
       
-      // {
-      //     nodeId: '05', nodeText: 'Persformance', iconCss: 'icon-docs icon',
-      // },
+      {
+          nodeId: '05', nodeText: 'Persformance', iconCss: 'icon-th icon',
+      },
  
   ];
   

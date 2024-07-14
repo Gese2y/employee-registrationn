@@ -1,1 +1,19 @@
-<p>performance-registration works!</p>
+<div class="chart-container">
+    <div class="chart">
+      <h3>{{chartTitle}}</h3>
+      <ejs-circularchart3d style="display:block;" align="center" [tilt]="tilt" [legendSettings]="legendSettings">
+        <e-circularchart3d-series-collection>
+          <e-circularchart3d-series [dataSource]="dataSource" xName="x" yName="y" [dataLabel]="dataLabel"></e-circularchart3d-series>
+        </e-circularchart3d-series-collection>
+      </ejs-circularchart3d>
+    </div>
+    <div class="chart">
+      <h3>{{chartTitle1}}</h3>
+      <ejs-circularchart3d style="display:block;" align="center" [tilt]="tilt1" [legendSettings]="legendSettings1">
+        <e-circularchart3d-series-collection>
+          <e-circularchart3d-series [dataSource]="dataSource1" xName="x" yName="y" [dataLabel]="dataLabel1"></e-circularchart3d-series>
+        </e-circularchart3d-series-collection>
+      </ejs-circularchart3d>
+    </div>
+  </div>
+  

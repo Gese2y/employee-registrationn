@@ -29,7 +29,7 @@ import { DepartementRegistrationComponent } from './departement-registration/dep
 import { RoleRegistrationComponent } from './role-registration/role-registration.component';
 import { TasksRegistrationComponent } from './tasks-registration/tasks-registration.component';
 import { PerformanceRegistrationComponent } from './performance-registration/performance-registration.component';
-
+import { CircularChart3DAllModule } from '@syncfusion/ej2-angular-charts'
 
 @NgModule({
   declarations: [
@@ -45,7 +45,7 @@ import { PerformanceRegistrationComponent } from './performance-registration/per
   imports: [
     BrowserModule,
     FormsModule,
-    TabAllModule,
+    TabAllModule,CircularChart3DAllModule,
     GridModule, NgIf, RatingModule,
     GridAllModule,
     DialogAllModule,
