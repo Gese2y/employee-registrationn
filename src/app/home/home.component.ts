@@ -8,9 +8,7 @@ import { SidebarComponent, TreeViewComponent ,NodeSelectEventArgs} from '@syncfu
 })
 export class HomeComponent implements OnInit {
   navigateTo: any='Employees';
-  ngOnInit(): void {
-    throw new Error('Method not implemented.');
-  }
+ 
   @ViewChild('sidebarTreeviewInstance')
   public sidebarTreeviewInstance?: SidebarComponent;
   @ViewChild('treeviewInstance')
@@ -41,8 +39,11 @@ export class HomeComponent implements OnInit {
       },
  
   ];
+  
   public field:Object ={ dataSource: this.data, id: 'nodeId', text: 'nodeText', child: 'nodeChild', iconCss: 'iconCss' };
-
+  ngOnInit(): void {
+    this.navigateTo='Employees'
+  }
   public onCreated(args: any) {
       (this.sidebarTreeviewInstance as SidebarComponent).element.style.visibility = '';
   }
