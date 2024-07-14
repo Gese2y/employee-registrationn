@@ -102,7 +102,7 @@
 <ejs-dialog #dialogObj [visible]="false" isModal='true' [width]="'600px'" [height]="'500px'" [header]="'Employee Form'">
 
   <div>
-     <app-registration  (completedupdate)="updateEmployee($event)" (completed)="register($event)"></app-registration>
+     <app-registration [isEdit]="isEdit" [data]="datas" (completedupdate)="updateEmployee($event)" (completed)="register($event)"></app-registration>
       <button ejs-button cssClass="e-primary" (click)="dialogButtonClick()">Close</button>
   </div>
 
