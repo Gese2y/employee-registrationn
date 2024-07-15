@@ -15,8 +15,8 @@ export class PerformanceRegistrationComponent implements OnInit {
   public dataLabel?: Object;
   public tilt1?: number;
   public tilt?: number;
-  public chartTitle: string = 'Gender Distribution';
-  public chartTitle1: string = 'Task Distribution';
+  public chartTitle1: string = 'Gender Distribution';
+  public chartTitle: string = 'Task Distribution';
   ngOnInit(): void {
     const tasks: Task[] = Tasksdata as Task[];
 
